@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<title>The Oyster: Residences</title>
+
+<!-- NOTE: This index made from phone3_WORKS.html -->
+
+<!-- CSS reset -->
+<link rel="stylesheet" href="css/reset.css">
+<!-- ANIMSITION css page transitions -->
+<link rel="stylesheet" href="css/animsition.min.css">
+<!-- WEBFONTS css from myfonts.com -->
+<link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+<!-- SLICKNAV css mobile menu -->
+<link rel="stylesheet" href="slicknav/slicknav-oyster.css">
+<!-- BULLET NAV subnav css -->
+<link rel="stylesheet" href="bulletNav/css/bulletNav_style.css">
+<!-- IMAGE COMPARISON SLIDER css https://github.com/CodyHouse/image-comparison-slider-->
+<link rel="stylesheet" href="comparisonslider/comparison_style_5.css">
+<!-- OYSTER MAIN css -->
+<link rel="stylesheet" type="text/css" href="css/oyster_main.css" />
+<!-- JQUERY js -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="bulletNav/js/modernizr.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+
+<!-- ANIMSITION js -->
+<script src="js/animsition.min.js"></script>
+
+<style>
+/*#skrollr-body {
+  height: 100%;
+  min-height: 1px;
+  position: relative;
+  width: 100%;
+}*/
+/* section id's*/
+#section1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#section2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+#section2 .image {
+	width: 100%;
+	height: 100%;
+	background-image: url(images/landing_residences.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#section2 .copy_outer {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	background-color: rgba(255,255,255,1.0)
+}
+#section2 .title {
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	margin: 0 0 0 0;
+	padding: 32px 0 16px;
+	font: 64px Voga;
+}
+#section2 .bodycopy {
+	display: block;
+	position: relative;
+	width: 760px;
+	text-align: center;
+	color: #000;
+	margin: 0 auto;
+	padding: 0 0 92px;
+	font: 17px/140% "Bembo Italic";
+	max-width: 90%;
+}
+#section2 .scrollArrowOuter {
+	position: absolute;
+	bottom: 12px;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+}
+#section2content {
+	overflow: scroll;
+	width: 100%;
+	height: 100%;
+}
+#section2content .copy_outer .scrollArrowOuter {
+	position: relative;
+	width: 100%;
+	bottom: 84px;
+	z-index: 3;
+	height: 12px;
+	color: #FFFFFF;
+}
+#section2 .copy_outer .scrollArrow {
+	background-image: url(images/gallery_controls_v2_b.png);
+}
+#section3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	/*background-color: #5C5C5C;*/
+}
+#section3 iframe {
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#section3 figure {
+	display: block;
+}
+/*COMPARISON SLIDER styles. Must reside in the page, not external. The legacy jquery.cover.js style names include the word greenishCover*/
+.greenishCover {
+	position:absolute;
+	height:100%;
+	width:100%;
+	overflow:hidden;	
+}
+.cd-image-container {
+	width: 100%; max-width: none; height: 100%;
+}
+/*
+see https://css-tricks.com/perfect-full-page-background-image/
+*/
+div.cd-resize-img {
+    background: url(images/residences_compare_night.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+div.greenishCover {
+    background: url(images/residences_compare_day.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+@media screen and (max-width: 768px) {
+#section2 .title {
+	width: 96%;
+	text-align: center;
+	padding: 24px 0 8px;
+	font: 42px Voga;
+}
+#section2 .bodycopy {
+	display: block;
+	position: relative;
+	width: 760px;
+	text-align: center;
+	color: #000;
+	margin: 0 auto;
+	padding: 0 0 92px 0;
+	font: 17px/140% "Bembo Italic";
+	max-width: 90%;
+}
+#section3 iframe {
+	display: block;
+}
+#section3 figure {
+	display: none;
+}
+}
+
+</style>
+
+</head>
+
+<!-- CONTENT -->
+
+<body class="animsition">
+
+<div id="top"></div>
+<div class="scrollArrowOuter"> <a href="#section2" class="scrollArrow smooth"></a> </div>
+
+<div class="header" data-anchor-target="#section2" data-10p-top="opacity: 0;" data-0p-top="opacity: 1;">
+  <nav id="main-nav">
+    <ul id="menu">
+      <li><a href="index.html#residences" class="active animsition-link">RESIDENCES</a></li>
+      <li><a href="amenities.html"  class="animsition-link">AMENITIES</a></li>
+      <li><a href="contact.html" class="animsition-link">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div class="logo"><a href="#top" class="smooth"><img src="images/oyster_logo_W_shadow.png" alt=""/></a></div>
+</div>
+
+<nav id="cd-vertical-nav" data-anchor-target="#section2" data-50p-top="opacity: 0;" data-20p-top="opacity: 1;">
+  <ul>
+    <li> <a href="#section1" data-number="1" style="display: none;"> <span class="cd-dot"></span> <span class="cd-label">Landing</span> </a> </li>
+    <li> <a href="#section2" data-number="2"> <span class="cd-dot"></span> <span class="cd-label">Residences 1</span> </a> </li>
+    <li> <a href="#section3" data-number="3"> <span class="cd-dot"></span> <span class="cd-label">Residences 2</span> </a> </li>
+  </ul>
+</nav>
+
+<section id="section1" class="cd-section scrollify">
+  <div class="logo_bkg"></div>
+  <div class="logoOuter">
+    <div class="logo"><img src="images/oyster_logo_W_shadow.png" alt=""/> </div>
+    <div class="tag">introducing waterfront homes for less than $1m</div>
+  </div>
+</section>
+<section id="section2" class="cd-section scrollify" data-section-name="residences">
+<div class="scrollArrowOuter"> <div class="scrollArrow smooth" id="copy_scroll"></div>
+   </div>
+  <div id="section2content" class="scrollify">
+  <!--<div id="section2content" class="">-->
+    <div class="image"></div>
+    <div class="copy_outer" id="white_box">
+      <div class="title">THE WORLD IS YOUR OYSTER</div>
+      <div class="bodycopy">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, aperiam omnis sint blanditiis deleniti necessitatibus nemo deserunt voluptas quisquam quis nihil recusandae consequuntur ab hic iure quaerat sed? Ex, quia enim deleniti iste nisi impedit sit eligendi doloribus ipsa esse harum eveniet officiis culpa dolor quaerat. Harum, possimus beatae labore.</p>
+      </div>
+      <div class="scrollArrowOuter"> <a href="#section3" class="scrollArrow smooth"> </a> </div>
+    </div>
+  </div>
+</section>
+
+<section id="section3" class="cd-section scrollify">
+
+  <figure class="cd-image-container residences">
+    <div class="greenishCover">
+      <div> <img class="myBackgroundImage" alt=""> <span class="cd-image-label" data-type="original"> </span> </div>
+    </div>
+    <div class="cd-resize-img">
+        <div> <img alt=""> <span class="cd-image-label" data-type="modified"> </span> </div>
+    </div>
+    <span class="cd-handle"></span>
+   </figure>
+   
+   <iframe src="residences_iframe_content.html" frameborder="0"></iframe>
+   
+</section>
+
+
+<!-- EASY VIDEO BACKGROUND js --> 
+<script type="text/javascript" src="easyvideobackground/js/libs/swfobject.js"></script> 
+<script type="text/javascript" src="easyvideobackground/js/libs/modernizr.video.js"></script> 
+<script type="text/javascript" src="easyvideobackground/js/video_background_gsr_unmin.js"></script> 
+<script type="text/javascript" src="magnific-popup/jquery.magnific-popup.min.js"></script> 
+<script type="text/javascript" src="royalslider/royalslider.min.js"></script> 
+<!-- SCROLLTO plugin, provides auto-scroll - uncomment for production --> 
+<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>  
+<!-- smooth-scroll plugin, provides smooth scrolling to anchors --> 
+<script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
+<!-- SCROLLIFY js -->
+<script src="js/jquery.scrollify.min.js"></script> 
+<!-- BULLET NAV js --> 
+<script src="bulletNav/js/main.js"></script> 
+<!-- SKROLLR plugin for scroll effects on navs --> 
+<script type="text/javascript" src="js/skrollr.min.js"></script> 
+<!-- SLICKNAV plugin for mobile menu--> 
+<script src="slicknav/jquery.slicknav.js"></script>
+<!-- IMAGE COMPARISON SLIDER js https://github.com/CodyHouse/image-comparison-slider-->
+<script src="comparisonslider/comparison_main.js"></script> 
+ 
+<!-- ANIMSITION init -->
+<script>
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1100,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+    loading: true,
+    loadingParentElement: 'html', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+
+<!-- SCROLLTO inits for auto-scroll -->
+<script>
+jQuery(document).ready(function(){
+    if (jQuery(window).width() > 768) {
+
+<!-- 1st auto-scroll -->
+var timer;
+
+function stopTimer(){
+  clearTimeout(timer);
+}
+
+function startTimer(){
+  timer = setTimeout(function(){
+    $(window).scrollTo("#section2", 1100, 'easeInOutCubic');
+	<!--bm refers to function reset defined above-->
+    /*setTimeout(reset, 3500);*/
+  }, 8000);
+}
+
+$(document).ready(startTimer);
+
+$(window).one("scroll", stopTimer);
+
+<!-- 2nd auto-scroll -->
+var timer2;
+
+function stopTimer2(){
+  clearTimeout(timer2);
+}
+
+function startTimer2(){
+  
+  timer2 = setTimeout(function(){
+	 $("#section2content").animate({scrollTop: "280px"}, 1100, 'easeInOutCubic');
+	   }, 10000);
+}
+
+$(document).ready(startTimer2);
+$("#section2content").one("scroll", stopTimer2);
+$( "#copy_scroll" ).click(function() {
+	$("#section2content").animate({scrollTop: "280px"}, 1100, 'easeInOutCubic');
+});
+    }  
+});
+</script>
+
+
+<script>
+<!-- Required for the "copy_scroll" button -->
+$( "#copy_scroll" ).click(function() {
+$("#section2content").animate({scrollTop: "280px"}, 1100, 'easeInOutCubic');
+});
+</script>
+
+<!-- EASY VIDEO BACKGROUND plugin init--> 
+<script>
+	jQuery(document).ready(function($) {
+		var Video_back = new video_background($("body"), { 
+		"position": "fixed",	//Follow page scroll
+		"z-index": "-1",		//Behind everything
+  
+		"loop": true, 			//Loop when it reaches the end
+		"autoplay": true,		//Autoplay at start
+		"muted": true,			//Muted at start
+  
+		"mp4":"easyvideobackground/videos/Comp_4_1.mp4" , 	//Path to video mp4 format
+		"webm":"easyvideobackground/videos/Comp_4_1.mp4" , 	//Path to video webm format
+		"video_ratio": 1.7778, 				// width/height -> If none provided sizing of the video is set to adjust
+  
+		"fallback_image": "easyvideobackground/videos/Comp_3_v2.jpg",	//Fallback image path
+		"priority": "html5"				//Priority for html5 (if set to flash and tested locally will give a flash security error) BM I edited the js so if this is set to Flash, or if you hit the page from old ie, it just displays the image. Set this to html5 to play the video.
+		}); 
+
+	});
+</script>
+
+<!-- SMOOTHSCROLL init and options. note that this is set up to only affect buttons with the class "smooth" --> 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.smooth').smoothScroll();
+		$('.smooth').click(function(event) {
+			event.preventDefault();
+			var link = this;
+			$.smoothScroll({
+			    scrollTarget: link.hash,
+			    speed: 1100,
+				easing: 'easeInOutCubic'
+			    //speed: 'auto',
+			    //autoCoefficient: 4
+                // ADM: event tracking
+/*                beforeScroll: function() {
+                    disableScrollTracking();
+                },
+                afterScroll: function() {
+                    var elem = event.target;
+                    firePageviewEvent($(elem).closest('a[href]').attr('href'));
+                    enableScrollTracking();
+                }*/
+                // ADM: end event tracking
+            });
+		});
+	});
+</script>
+
+<!--SLICKNAV init -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav({
+		label: "",
+		closeOnClick: true,
+		});
+});
+</script>
+
+<!-- SKROLLR init --> 
+<!--<script type="text/javascript">
+	var s = skrollr.init({
+		forceHeight: false
+	});
+</script>-->
+
+<!-- SCROLLIFY and SKROLLR inits with if/else statement to enable or disable. -->
+<script>
+$(document).ready(function(){
+    if ($(window).width() > 768) {
+        $(function() {
+		$.scrollify({
+			section : ".scrollify",
+			sectionName: "section-name",
+			easing: "easeInOutCubic",
+			scrollSpeed: 1100
+		});
+		var s = skrollr.init({
+		forceHeight: false
+		});
+	});
+    }  
+});
+$(window).resize(function () {
+        if ($(window).width() < 768) {
+            $.scrollify.disable()
+        }
+		else {
+   			$.scrollify.enable()
+}
+});
+
+</script>
+
+
+<!--<div class="animsition-loading" style="z-index: 100;"></div>-->
+
+</body>
+</html>

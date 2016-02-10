@@ -1,0 +1,68 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3157954, 2016-01-21T16:19:10-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Bembo by Monotype 
+ * URL: http://www.myfonts.com/fonts/mti/bembo/bembo/
+ * Copyright: Digitized data copyright The Monotype Corporation 1991-1995. All rights reserved. Bembo&#x00AE; is a trademark of The Monotype Corporation which may be registered in certain jurisdictions.
+ * Licensed pageviews: 250,000
+ * 
+ * Webfont: Bembo-Bold by Monotype 
+ * URL: http://www.myfonts.com/fonts/mti/bembo/bold/
+ * Copyright: Digitized data copyright The Monotype Corporation 1991-1995. All rights reserved. Bembo&#x00AE; is a trademark of The Monotype Corporation which may be registered in certain jurisdictions.
+ * Licensed pageviews: 250,000
+ * 
+ * Webfont: Bembo-Italic by Monotype 
+ * URL: http://www.myfonts.com/fonts/mti/bembo/italic/
+ * Copyright: Digitized data copyright The Monotype Corporation 1991-1995. All rights reserved. Bembo&#x00AE; is a trademark of The Monotype Corporation which may be registered in certain jurisdictions.
+ * Licensed pageviews: 250,000
+ * 
+ * Webfont: Voga-Bold by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/voga/bold/
+ * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: Voga-Regular by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/voga/regular/
+ * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * Webfont: Voga-Medium by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/voga/medium/
+ * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3157954
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/302fc2");
+
+  
+@font-face {font-family: 'Bembo';src: url('../webfonts/302FC2_0_0.eot');src: url('../webfonts/302FC2_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/302FC2_0_0.woff2') format('woff2'),url('../webfonts/302FC2_0_0.woff') format('woff'),url('../webfonts/302FC2_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Bembo-Bold';src: url('../webfonts/302FC2_1_0.eot');src: url('../webfonts/302FC2_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/302FC2_1_0.woff2') format('woff2'),url('../webfonts/302FC2_1_0.woff') format('woff'),url('../webfonts/302FC2_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Bembo-Italic';src: url('../webfonts/302FC2_2_0.eot');src: url('../webfonts/302FC2_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/302FC2_2_0.woff2') format('woff2'),url('../webfonts/302FC2_2_0.woff') format('woff'),url('../webfonts/302FC2_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Voga-Bold';src: url('../webfonts/302FC2_3_0.eot');src: url('../webfonts/302FC2_3_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/302FC2_3_0.woff2') format('woff2'),url('../webfonts/302FC2_3_0.woff') format('woff'),url('../webfonts/302FC2_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Voga-Regular';src: url('../webfonts/302FC2_4_0.eot');src: url('../webfonts/302FC2_4_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/302FC2_4_0.woff2') format('woff2'),url('../webfonts/302FC2_4_0.woff') format('woff'),url('../webfonts/302FC2_4_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Voga-Medium';src: url('../webfonts/302FC2_5_0.eot');src: url('../webfonts/302FC2_5_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/302FC2_5_0.woff2') format('woff2'),url('../webfonts/302FC2_5_0.woff') format('woff'),url('../webfonts/302FC2_5_0.ttf') format('truetype');}
+ 
